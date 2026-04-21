@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Directory</title>
+</head>
+<body>
+
+<h1>Employee Directory</h1>
+
+<form action="/employees" method="POST">
+    <input type="text" name="employee" placeholder="Enter employee name" required>
+    <button type="submit">Add Employee</button>
+</form>
+
+<h2>Employee List</h2>
+<ul>
+    {% for emp in employees %}
+        <li>{{ emp }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
