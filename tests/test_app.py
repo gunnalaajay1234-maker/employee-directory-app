@@ -3,9 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
 def test_add_employee():
-    service = Service("C:\\chromedriver\\chromedriver.exe")
-
-    driver = webdriver.Chrome(service=service)
+    driver = webdriver.Chrome()
 
     driver.get("http://localhost:5000")  # or your EC2 IP
 
